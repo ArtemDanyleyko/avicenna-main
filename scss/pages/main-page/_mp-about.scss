@@ -1,0 +1,87 @@
+// .mp-about {
+//   padding-top: 40px;
+//   padding-bottom: 40px;
+
+//   @include tablet {
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+//   }
+//   @include sm-desktop {
+//     padding-top: 80px;
+//     padding-bottom: 80px;
+//   }
+// }
+
+// .mp-about__wrap {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+
+//   @include sm-desktop {
+//     display: block;
+//   }
+
+//   @include desktop {
+//     display: flex;
+//     flex-direction: row;
+//   }
+// }
+
+// .mp-about__image {
+//   margin-bottom: 30px;
+
+//   @include sm-desktop {
+//     float: left;
+//     margin-bottom: 0;
+//     padding-right: 20px;
+//   }
+
+//   @include desktop {
+//     float: none;
+//   }
+// }
+
+// .mp-about__title {
+//   font-size: 32px;
+//   color: var(--main-title-color);
+//   margin-bottom: 20px;
+
+//   @include tablet {
+//     margin-bottom: 30px;
+//   }
+// }
+
+// .mp-about__subtitle {
+//   color: var(--main-title-color);
+//   margin-bottom: 10px;
+// }
+
+// .mp-about__text-big {
+//   display: none;
+
+//   @include mobile {
+//     display: block;
+//     font-size: 18px;
+//     line-height: 1.5;
+
+//     color: var(--second-title-color);
+//   }
+
+//   @include desktop {
+//     width: 750px;
+//   }
+// }
+
+// .mp-about__text-small {
+//   font-size: 18px;
+//   color: var(--second-title-color);
+//   line-height: 1.5;
+
+//   @include mobile {
+//     display: none;
+//   }
+// }
+
+// .mp-about__text-link {
+//   font-style: italic;
+// }

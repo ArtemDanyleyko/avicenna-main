@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avicenna Clinic</title>
+        <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- Android Chrome Icon -->
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+
+    <!-- Web Manifest -->
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body class="body">
+    <div id="header" class="sub-header"></div>
+    <header class="header">
+        <div class="container">
+            <a href="./index.html" class="header__logo-link">
+                <img class="header__logo" src="./images/Avicenna Clinic logo.jpg" alt="Фото клініки" width="100" height="50" />
+            </a>
+            <ul class="header__pagelist list">
+                <li class="header__pagelist-item">
+                    <a href="index.html" class="header__pagelist-link link">Головна</a>
+                </li>
+                <li class="header__pagelist-item">
+                    <a href="services.html" class="header__pagelist-link link">Послуги</a>
+                </li>
+                <li class="header__pagelist-item">
+                    <a href="prices.html" class="header__pagelist-link link">Ціни</a>
+                </li>
+                <li class="header__pagelist-item">
+                    <a href="doctors.html" class="header__pagelist-link link current">Лікарі</a>
+                </li>
+                <li class="header__pagelist-item">
+                    <a href="gallery.html" class="header__pagelist-link link">Галерея</a>
+                </li>
+                <li class="header__pagelist-item">
+                    <a href="contacts.html" class="header__pagelist-link link">Контакти</a>
+                </li>
+                <li class="header__pagelist-item">
+                    <a href="dentistry.html" class="header__pagelist-link link">Стоматологія</a>
+                </li>
+            </ul>
+            <ul class="header__contactlist list">
+                <li class="header__contactlist-item">
+                    <a href="tel:+380505370059" class="header__contactlist-link link">
+                        <svg class="header__contactlist-icon" width="10" height="16">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>
+                        +380 (50) 537 00 59</a>
+                </li>
+                <li class="header__contactlist-item">
+                    <a href="https://maps.app.goo.gl/UGhffnsArwxpfyne9" class="header__contactlist-link link">
+                        <svg class="header__contactlist-icon" width="17" height="17">
+                            <use href="./images/icons.svg#icon-address"></use>
+                        </svg>
+                        Вул. Соборності 33
+                    </a>
+                </li>
+            </ul>
+            <button type="button" class="header-menu__button pointer" aria-expanded="false" aria-controls="menu" data-menu-button>
+                <svg class="header-menu__icon" width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                    <use class="header-menu__burger" href="./images/icons.svg#icon-menu-burger"></use>
+                    <use class="header-menu__cross" href="./images/icons.svg#icon-menu-closer"></use>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <div class="header-menu" id="menu" data-menu>
+        <div class="header-menu__container">
+            <div class="header-menu__wrap">
+                <ul class="header-menu__pagelist list">
+                    <li class="header-menu__pagelist-item">
+                        <a href="./index.html" class="header-menu__pagelist-link link">Головна
+                        </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="./services.html" class="header-menu__pagelist-link link">Послуги</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="./prices.html" class="header-menu__pagelist-link link">Ціни</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="./doctors.html" class="header-menu__pagelist-link link">Лікарі
+                            <svg class="header-menu__current-icon" width="30" height="30">
+                                <use href="./images/icons.svg#icon-mobile-current"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="./gallery.html" class="header-menu__pagelist-link link">Галерея</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="./contacts.html" class="header-menu__pagelist-link link">Контакти</a>
+                    </li>
+                </ul>
+                <ul class="header-menu__phonelist list">
+                    <li class="header-menu__phonelist-item">
+                        <a href="tel:+380505370059" class="header-menu__phonelist-link link">
+                            +380 (50) 537 00 59</a>
+                    </li>
+                </ul>
+                <a href="https://maps.app.goo.gl/UGhffnsArwxpfyne9" class="header-menu__address-link link">Вул. Соборності 33
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================DOCTORS=========================== -->
+
+    <main>
+        <section class="doctors">
+            <div class="container">
+                <h2 class="doctors__title">НАША КОМАНДА ПРОФЕСІОНАЛІВ</h2>
+                <ul class="doctors__list list">
+
+                    <li class="doctors__item">
+                        <picture>
+                            <source srcset="
+                    ./images/doctors/Popova.JPG 1x,
+                    ./images/doctors/Popova.JPG 2x
+                  " media="(min-width: 1440px)" />
+                            <img class="doctors__image" src="./images/doctors/Popova.JPG" alt="Лікар" width="240" height="240" />
+                        </picture>
+                        <h2 class="doctors__subtitle">Попова<br> Ірина Борисівна</h2>
+                        <p class="doctors__text">Головний лікар<br> Лікар Дерматовенеролог</p>
+                        <a href="./contacts.html" class="doctors__link link pointer">Запис на прийом</a>
+                    </li>
+                    <li class="doctors__item">
+                        <picture>
+                            <source srcset="
+                    ./images/doctors/Gladkov_small.JPG 1x,
+                    ./images/doctors/Gladkov_small.JPG 2x
+                  " media="(min-width: 1440px)" />
+                            <img class="doctors__image" src="./images/doctors/Gladkov_small.JPG" alt="Лікар" width="240" height="240" />
+                        </picture>
+                        <h2 class="doctors__subtitle">Гладков<br> Олексій Ігорович</h2>
+                        <p class="doctors__text">Директор<br> Лікар Дерматовенеролог</p>
+                        <a href="./contacts.html" class="doctors__link link pointer">Запис на прийом</a>
+                    </li>
+                    <li class="doctors__item">
+                        <picture>
+                            <source srcset="
+                    ./images/doctors/Kopylova.jpg 1x,
+                    ./images/doctors/Kopylova.jpg 2x
+                  " media="(min-width: 1440px)" />
+                            <img class="doctors__image" src="./images/doctors/Kopylova.jpg" alt="Лікар" width="240" height="240" />
+                        </picture>
+                        <h2 class="doctors__subtitle">Копилова<br> Тамара Олександрівна</h2>
+                        <p class="doctors__text">Лікар Акушер-гінеколог</p>
+                        <a href="./contacts.html" class="doctors__link link pointer">Запис на прийом</a>
+                    </li>
+                    <li class="doctors__item">
+                        <picture>
+                            <source srcset="
+                    ./images/doctors/Lopyshynska.jpg 1x,
+                    ./images/doctors/Lopyshynska.jpg 2x
+                  " media="(min-width: 1440px)" />
+                            <img class="doctors__image" src="./images/doctors/Lopyshynska.jpg" alt="Лікар" width="240" height="240" />
+                        </picture>
+                        <h2 class="doctors__subtitle">Лопушинська<br> Тетяна Олександрівна</h2>
+                        <p class="doctors__text">Лікар з ультразвукової діагностики</p>
+                        <a href="./contacts.html" class="doctors__link link pointer">Запис на прийом</a>
+                    </li>
+                    <li class="doctors__item">
+                        <picture>
+                            <source srcset="
+                    ./images/doctors/Lytovchenko.jpg 1x,
+                    ./images/doctors/Lytovchenko.jpg 2x
+                  " media="(min-width: 1440px)" />
+                            <img class="doctors__image" src="./images/doctors/Lytovchenko.jpg" alt="Лікар" width="240" height="240" />
+                        </picture>
+                        <h2 class="doctors__subtitle">Литовченко<br> Анна Петрівна</h2>
+                        <p class="doctors__text">Лікар Ендокринолог</p>
+                        <a href="./contacts.html" class="doctors__link link pointer">Запис на прийом</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- =========================FOOTER=========================== -->
+
+    <footer class="footer">
+        <div class="footer-partners-title">
+            Наші партнери
+        </div>
+        <!-- Горизонтальный контейнер для фотографий -->
+        <div class="footer-gallery">
+            <img src="./images/logo/arterium.png" alt="Галерея 1" class="footer-gallery__item" />
+            <img src="./images/logo/bausch.png" alt="Галерея 2" class="footer-gallery__item" />
+            <img src="./images/logo/cerave.png" alt="Галерея 3" class="footer-gallery__item" />
+            <img src="./images/logo/delta-medical.png" alt="Галерея 4" class="footer-gallery__item" />
+            <img src="./images/logo/eucerin.png" alt="Галерея 4" class="footer-gallery__item" />
+            <img src="./images/logo/eurolek.png" alt="Галерея 4" class="footer-gallery__item" />
+            <img src="./images/logo/farmak.jpeg" alt="Галерея 4" class="footer-gallery__item" />
+            <img src="./images/logo/gsk.jpg" alt="Галерея 4" class="footer-gallery__item" />
+            <img src="./images/logo/kusum.jpg" alt="Галерея 4" class="footer-gallery__item" />
+            <img src="./images/logo/la_roche_posay.jpg" alt="Галерея 4" class="footer-gallery__item" />
+            <img src="./images/logo/propharma.png" alt="Галерея 4" class="footer-gallery__item" />
+            <img src="./images/logo/vichy.png" alt="Галерея 4" class="footer-gallery__item" />
+            <img src="./images/logo/viola.png" alt="Галерея 4" class="footer-gallery__item" />
+        </div>
+        <div class="container">
+            <div class="footer-contacts__wrap">
+                <p class="footer-title">Наші контакти</p>
+                <ul class="footer__contactlist list">
+                    <li class="footer__contactlist-item">
+                        <a href="tel:+380505370059" class="footer__contactlist-link link">
+                            <svg class="footer__contactlist-icon" width="10" height="16">
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>
+                            +380 (50) 537 00 59
+                        </a>
+                    </li>
+                    <li class="footer__contactlist-item">
+                        <a href="https://maps.app.goo.gl/UGhffnsArwxpfyne9" class="footer__contactlist-link link">
+                            <svg class="footer__contactlist-icon" width="17" height="17">
+                                <use href="./images/icons.svg#icon-address"></use>
+                            </svg>
+                            Вул. Соборності 33
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-pages__wrap">
+                <p class="footer-title">Сторінки сайту</p>
+                <div class="footer-pages__lists">
+                    <ul class="footer-pages__list list">
+                        <li class="footer-pages__item">
+                            <a href="./index.html" class="footer-pages__link link">Головна</a>
+                        </li>
+                        <li class="footer-pages__item">
+                            <a href="./services.html" class="footer-pages__link link">Послуги</a>
+                        </li>
+                        <li class="footer-pages__item">
+                            <a href="./prices.html" class="footer-pages__link link">Ціни</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-pages__list list">
+                        <li class="footer-pages__item">
+                            <a href="./doctors.html" class="footer-pages__link link">Лікарі</a>
+                        </li>
+                        <li class="footer-pages__item">
+                            <a href="./gallery.html" class="footer-pages__link link">Галерея</a>
+                        </li>
+                        <li class="footer-pages__item">
+                            <a href="./contacts.html" class="footer-pages__link link">Контакти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==============================SCROLL-UP============================== -->
+
+    <a href="#header" class="to-top">ВГОРУ</a>
+
+    <!-- =========================SCRIPTS=========================== -->
+    <script src="./js/header-menu.js"></script>
+
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+    <script src="./js/scroll-up.js"></script>
+</body></html>
