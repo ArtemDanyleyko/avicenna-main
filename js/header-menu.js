@@ -1,15 +1,31 @@
 (() => {
-	const menuBtnRef = document.querySelector("[data-menu-button]");
-	const mobileMenuRef = document.querySelector("[data-menu]");
-	const pageBody = document.querySelector(".body");
+    const menuBtnRef = document.querySelector("[data-menu-button]");
+    const mobileMenuRef = document.querySelector("[data-menu]");
+    const pageBody = document.querySelector("body");
+    const overlay = document.querySelector(".header-menu__overlay");
 
-	menuBtnRef.addEventListener("click", () => {
-		const expanded = menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+    menuBtnRef.addEventListener("click", () => {
+        const expanded = menuBtnRef.getAttribute("aria-expanded") === "true";
 
-		menuBtnRef.classList.toggle("is-open");
-		menuBtnRef.setAttribute("aria-expanded", !expanded);
+        // Переключаем состояние кнопки меню
+        menuBtnRef.classList.toggle("is-open");
+        menuBtnRef.setAttribute("aria-expanded", !expanded);
 
-		mobileMenuRef.classList.toggle("is-open");
-		pageBody.classList.toggle("no-scroll");
-	});
+        // Переключаем состояние меню
+        mobileMenuRef.classList.toggle("is-open");
+
+        // Добавляем/удаляем блокировку прокрутки
+        pageBody.classList.toggle("no-scroll");
+
+        // Переключаем состояние оверлея
+        overlay.classList.toggle("is-open");
+    });
+
+    // Закрытие меню при клике на оверлей
+    overlay.addEventListener("click", () => {
+        mobileMenuRef.classList.remove("is-open");
+        menuBtnRef.classList.remove("is-open");
+        pageBody.classList.remove("no-scroll");
+        overlay.classList.remove("is-open");
+    });
 })();
