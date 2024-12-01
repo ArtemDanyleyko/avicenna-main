@@ -5,8 +5,8 @@
     --text-colour-lightgrey: #757575;
     --text-colour-black: #000000;
     --second-title-color: #757575;
-    --main-hover-focus-color: #000000;
-    --second-hover-focus-color: #000000;
+    --main-hover-focus-color: #DCDCDC;
+    --second-hover-focus-color: #DCDCDC;
     --header-up-bg: rgb(255, 174, 0);
     --header-down-bg: #ffffff;
     --footer-bg: #232325;
@@ -221,7 +221,7 @@ img {
 
 .header__pagelist-link:hover,
 .header__pagelist-link:focus {
-    color: var(--main-hover-focus-color)
+    color: #000
 }
 
 .header__contactlist {
@@ -250,7 +250,7 @@ img {
 
 .header__contactlist-link:hover,
 .header__contactlist-link:focus {
-    color: var(--main-hover-focus-color)
+    color: #000;
 }
 
 .header__contactlist-icon {
@@ -267,29 +267,26 @@ img {
 .header-menu {
     display: none;
     position: fixed; /* фиксированное позиционирование */
-    top: 0;
-    transform: translateX(-50%) translateY(-100%); /* центрируем по горизонтали и скрываем по вертикали */
+    top: 0; /* прижимаем к верхней части */
     width: auto; /* автоширина для меню, зависящая от самого широкого элемента */
     height: 100vh; /* высота на весь экран */
-    max-height: 100vh; /* Обмеження висоти, щоб не виходити за межі екрану */
+    max-height: 100vh; /* ограничение по высоте */
     background-color: white; /* белый фон для меню */
     z-index: 2;
     transition: transform 0.3s ease; /* плавное появление меню */
     padding: 20px;
-     box-sizing: border-box; /* Враховує padding у ширині/висоті */
-    overflow-y: auto; /* Прокрутка, якщо елементи не поміщаються */
+    box-sizing: border-box; /* учитывает padding в ширине/высоте */
+    overflow-y: auto; /* прокрутка, если элементы не помещаются */
 }
 
 /* Когда меню открыто */
 .header-menu.is-open {
-    display: block;
-    transform: translateX(0%) translateY(0); /* показываем меню */
+    display: flex;
 }
 
 /* Логотип в мобильном меню */
 .header__mobilelogo {
-    text-align: center;
-    margin: 20px 0; /* Отступы сверху и снизу */
+    margin-bottom: auto;
 }
 
 /* Стиль для активного пункта меню */
@@ -311,7 +308,7 @@ img {
 }
 
 /* Наведение на пункты меню */
-.header-menu .header-menu__container a:hover {
+.header-menu__wrap a:hover {
     color: #000; /* Черный цвет текста при наведении */
     border-bottom: 2px solid #000; /* Черное подчеркивание при наведении */
 }
@@ -339,8 +336,7 @@ img {
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding: 30px; /* отступы вокруг контейнера */
-    padding-top: 70px; /* увеличение отступа сверху, чтобы пункты меню были ниже */
+    padding: 0px 30px; /* отступы вокруг контейнера */
 }
 
 /* Пункты меню */
@@ -426,20 +422,13 @@ body.no-click * {
 }
 
 .header-menu__wrap {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+    column-gap: normal;
     padding: 20px; /* Додати внутрішні відступи для країв */
-    box-sizing: border-box; /* Враховує відступи у загальній висоті */
-    overflow-y: auto; /* Додає прокрутку, якщо вміст перевищує висоту */
 }
 
 .header-menu__pagelist {
-    display: flex;
     flex-direction: column; /* Вертикальное расположение элементов */
-    justify-content: space-between; /* Равномерное распределение элементов */
-    height: 100%; /* Занимает всю высоту контейнера */
     list-style: none; /* Убираем маркеры списка */
     padding: 0; /* Убираем отступы */
     margin: 0; /* Убираем внешние отступы */
@@ -464,11 +453,12 @@ body.no-click * {
     flex-direction: column; /* Вертикальное расположение элементов */
     font-size: 20px;
     font-weight: 500;
+    height: auto;
     margin-top: auto; /* Притягиваем блок к нижней части контейнера */
 }
 
 .header-menu__phonelist-link {
-    display: flex;
+    display:flex;
     align-items: center; /* Выравнивание текста и иконок по центру */
     color: var(--main-title-color);
     text-decoration: none; /* Убираем подчеркивание */
@@ -479,12 +469,10 @@ body.no-click * {
 }
 
 .header-menu__address-link {
-    font-size: 20px;
+    display:flex; 
+    align-items: center; /* Выравнивание текста и иконок по центру */
     color: var(--main-title-color);
-    text-align: center; /* Центрируем текст */
-    margin-top: 10px; /* Отступ от списка телефонов */
     text-decoration: none; /* Убираем подчеркивание */
-    transition: color 0.3s ease; /* Анимация для смены цвета */
 }
 
 .mp-hero {
@@ -734,7 +722,7 @@ screen and (min-width: 1440px)and (min-resolution: 2dppx) {
 
 .mp-services__link:hover,
 .mp-services__link:focus {
-    color: var(--main-hover-focus-color)
+    color: #000;
 }
 
 .mp-doctors {
@@ -1741,6 +1729,73 @@ screen and (min-width: 1440px)and (min-resolution: 2dppx) {
     text-align: center;
     color: #000;
     /* Белый цвет для выделения заголовков */
+}
+
+/* Медиазапрос для маленьких экранов */
+@media (max-width: 768px) {
+    .dentistry {
+        flex-direction: column;
+        padding: 60px 20px 20px 20px; /* Меньше отступов для мобильных */
+    }
+
+    .dentist-photo {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .dentist-info {
+        flex: 1;
+        padding-left: 0;
+    }
+
+    .dentist-name {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+
+    .dentist-subscription {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .dentist-info h1 {
+        font-size: 2rem;
+    }
+
+    .dentist-info p {
+        font-size: 1.6rem;
+    }
+
+    .dentist-info .contacts li {
+        font-size: 1.4rem;
+    }
+}
+
+/* Медиазапрос для очень маленьких экранов (например, телефоны с шириной менее 480px) */
+@media (max-width: 480px) {
+    .dentistry {
+        padding: 40px 10px 10px 10px; /* Ещё меньше отступов */
+    }
+
+    .dentist-name {
+        font-size: 2rem;
+    }
+
+    .dentist-subscription {
+        font-size: 1.2rem;
+    }
+
+    .dentist-info h1 {
+        font-size: 1.6rem;
+    }
+
+    .dentist-info p {
+        font-size: 1.4rem;
+    }
+
+    .dentist-info .contacts li {
+        font-size: 1.2rem;
+    }
 }
 
 .footer {
