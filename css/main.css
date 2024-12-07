@@ -10,7 +10,7 @@
     --header-up-bg: rgb(255, 174, 0);
     --header-down-bg: #ffffff;
     --footer-bg: #232325;
-    --button-color:#757575;
+    --button-color: #757575;
     --button-hover-focus-color: #757575;
     --bg-card-color: #ffffff;
     --card-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -176,10 +176,14 @@ img {
 
 /* Контейнер для списка пунктов меню */
 .header__pagelist {
-    list-style: none; /* Убираем маркеры списка */
-    padding: 0; /* Убираем отступы */
-    margin: 0; /* Убираем внешние отступы */
-    display: none; /* Используем flex для расположения пунктов в одну строку */
+    list-style: none;
+    /* Убираем маркеры списка */
+    padding: 0;
+    /* Убираем отступы */
+    margin: 0;
+    /* Убираем внешние отступы */
+    display: none;
+    /* Используем flex для расположения пунктов в одну строку */
 }
 
 @media screen and (min-width: 1024px) {
@@ -200,7 +204,7 @@ img {
 .header__pagelist-item {
     font-weight: 600;
     font-size: 18px;
-    
+
 }
 
 @media screen and (min-width: 1300px) {
@@ -266,17 +270,26 @@ img {
 /* Меню */
 .header-menu {
     display: none;
-    position: fixed; /* фиксированное позиционирование */
-    top: 0; /* прижимаем к верхней части */
-    width: auto; /* автоширина для меню, зависящая от самого широкого элемента */
-    height: 100vh; /* высота на весь экран */
-    max-height: 100vh; /* ограничение по высоте */
-    background-color: white; /* белый фон для меню */
+    position: fixed;
+    /* фиксированное позиционирование */
+    top: 0;
+    /* прижимаем к верхней части */
+    width: auto;
+    /* автоширина для меню, зависящая от самого широкого элемента */
+    height: 100vh;
+    /* высота на весь экран */
+    max-height: 100vh;
+    /* ограничение по высоте */
+    background-color: white;
+    /* белый фон для меню */
     z-index: 2;
-    transition: transform 0.3s ease; /* плавное появление меню */
+    transition: transform 0.3s ease;
+    /* плавное появление меню */
     padding: 20px;
-    box-sizing: border-box; /* учитывает padding в ширине/высоте */
-    overflow-y: auto; /* прокрутка, если элементы не помещаются */
+    box-sizing: border-box;
+    /* учитывает padding в ширине/высоте */
+    overflow-y: auto;
+    /* прокрутка, если элементы не помещаются */
 }
 
 /* Когда меню открыто */
@@ -291,26 +304,38 @@ img {
 
 /* Стиль для активного пункта меню */
 .header-menu .header-menu__container a.active {
-    color: #000; /* Черный цвет текста для активного пункта */
-    font-weight: bold; /* Жирный текст для активного пункта */
-    border-bottom: 2px solid #000; /* Черное подчеркивание для активного пункта */
-    padding-bottom: 8px; /* Дополнительный отступ снизу для подчеркивания */
+    color: #000;
+    /* Черный цвет текста для активного пункта */
+    font-weight: bold;
+    /* Жирный текст для активного пункта */
+    border-bottom: 2px solid #000;
+    /* Черное подчеркивание для активного пункта */
+    padding-bottom: 8px;
+    /* Дополнительный отступ снизу для подчеркивания */
 }
 
 /* Стиль для всех ссылок меню */
 .header-menu .header-menu__container a {
-    color: #fff; /* Белый цвет текста */
-    text-decoration: none; /* Убираем подчеркивание */
-    font-size: 18px; /* Размер шрифта */
-    margin-bottom: 10px; /* Уменьшенные отступы между пунктами */
-    padding: 10px 20px; /* Отступы вокруг текста */
-    transition: color 0.3s ease, border-bottom 0.3s ease; /* Плавный переход для цвета и подчеркивания */
+    color: #fff;
+    /* Белый цвет текста */
+    text-decoration: none;
+    /* Убираем подчеркивание */
+    font-size: 18px;
+    /* Размер шрифта */
+    margin-bottom: 10px;
+    /* Уменьшенные отступы между пунктами */
+    padding: 10px 20px;
+    /* Отступы вокруг текста */
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    /* Плавный переход для цвета и подчеркивания */
 }
 
 /* Наведение на пункты меню */
 .header-menu__wrap a:hover {
-    color: #000; /* Черный цвет текста при наведении */
-    border-bottom: 2px solid #000; /* Черное подчеркивание при наведении */
+    color: #000;
+    /* Черный цвет текста при наведении */
+    border-bottom: 2px solid #000;
+    /* Черное подчеркивание при наведении */
 }
 
 /* Оверлей */
@@ -322,7 +347,8 @@ img {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1; /* фон под меню */
+    z-index: 1;
+    /* фон под меню */
 }
 
 /* Когда меню открыто, оверлей становится видимым */
@@ -336,15 +362,20 @@ img {
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding: 0px 30px; /* отступы вокруг контейнера */
+    padding: 0px 30px;
+    /* отступы вокруг контейнера */
 }
 
 /* Пункты меню */
 .header-menu .header-menu__container a {
-    color: #333; /* контрастный темный цвет для текста */
-    text-decoration: none; /* убираем подчеркивание */
-    font-size: 18px; /* размер шрифта */
-    transition: color 0.3s ease; /* плавный переход цвета при наведении */
+    color: #333;
+    /* контрастный темный цвет для текста */
+    text-decoration: none;
+    /* убираем подчеркивание */
+    font-size: 18px;
+    /* размер шрифта */
+    transition: color 0.3s ease;
+    /* плавный переход цвета при наведении */
 }
 
 /* При наведении на пункты меню */
@@ -369,11 +400,13 @@ img {
 }
 
 body.no-click {
-    pointer-events: none; /* отключаем клики на странице */
+    pointer-events: none;
+    /* отключаем клики на странице */
 }
 
 body.no-click * {
-    pointer-events: auto; /* включаем клики только на элементах меню */
+    pointer-events: auto;
+    /* включаем клики только на элементах меню */
 }
 
 @media screen and (min-width: 1024px) {
@@ -424,14 +457,19 @@ body.no-click * {
 .header-menu__wrap {
     flex-direction: column;
     column-gap: normal;
-    padding: 20px; /* Додати внутрішні відступи для країв */
+    padding: 20px;
+    /* Додати внутрішні відступи для країв */
 }
 
 .header-menu__pagelist {
-    flex-direction: column; /* Вертикальное расположение элементов */
-    list-style: none; /* Убираем маркеры списка */
-    padding: 0; /* Убираем отступы */
-    margin: 0; /* Убираем внешние отступы */
+    flex-direction: column;
+    /* Вертикальное расположение элементов */
+    list-style: none;
+    /* Убираем маркеры списка */
+    padding: 0;
+    /* Убираем отступы */
+    margin: 0;
+    /* Убираем внешние отступы */
 }
 
 .header-menu__pagelist-link {
@@ -450,29 +488,36 @@ body.no-click * {
 
 .header-menu__phonelist {
     display: flex;
-    flex-direction: column; /* Вертикальное расположение элементов */
+    flex-direction: column;
+    /* Вертикальное расположение элементов */
     font-size: 20px;
     font-weight: 500;
     height: auto;
-    margin-top: auto; /* Притягиваем блок к нижней части контейнера */
+    margin-top: auto;
+    /* Притягиваем блок к нижней части контейнера */
 }
 
 .header-menu__phonelist-link {
-    display:flex;
-    align-items: center; /* Выравнивание текста и иконок по центру */
+    display: flex;
+    align-items: center;
+    /* Выравнивание текста и иконок по центру */
     color: var(--main-title-color);
-    text-decoration: none; /* Убираем подчеркивание */
+    text-decoration: none;
+    /* Убираем подчеркивание */
 }
 
 .header-menu__phonelist-link:hover {
-    color: var(--accent-color); /* Изменение цвета при наведении */
+    color: var(--accent-color);
+    /* Изменение цвета при наведении */
 }
 
 .header-menu__address-link {
-    display:flex; 
-    align-items: center; /* Выравнивание текста и иконок по центру */
+    display: flex;
+    align-items: center;
+    /* Выравнивание текста и иконок по центру */
     color: var(--main-title-color);
-    text-decoration: none; /* Убираем подчеркивание */
+    text-decoration: none;
+    /* Убираем подчеркивание */
 }
 
 .mp-hero {
@@ -754,15 +799,20 @@ screen and (min-width: 1440px)and (min-resolution: 2dppx) {
     box-shadow: var(--card-box-shadow);
     overflow: hidden;
     border-radius: 15px;
-    padding: 0; /* Убираем внутренние отступы для всего элемента */
+    padding: 0;
+    /* Убираем внутренние отступы для всего элемента */
 }
 
 .mp-doctors__image {
     width: 100%;
-    margin: 0; /* Убираем отступы */
-    padding: 0; /* Убираем внутренние отступы */
-    display: block; /* Убираем возможные артефакты inline-элементов */
-    border-radius: 15px 15px 0 0; /* Скругляем только верхние углы */
+    margin: 0;
+    /* Убираем отступы */
+    padding: 0;
+    /* Убираем внутренние отступы */
+    display: block;
+    /* Убираем возможные артефакты inline-элементов */
+    border-radius: 15px 15px 0 0;
+    /* Скругляем только верхние углы */
 }
 
 .mp-doctors__subtitle {
@@ -808,7 +858,8 @@ screen and (min-width: 1440px)and (min-resolution: 2dppx) {
     }
 
     .mp-doctors__item {
-        width: calc((100% - 40px) / 3); /* Три карточки в ряд */
+        width: calc((100% - 40px) / 3);
+        /* Три карточки в ряд */
     }
 
     .mp-doctors__link {
@@ -823,7 +874,8 @@ screen and (min-width: 1440px)and (min-resolution: 2dppx) {
     }
 
     .mp-doctors__item {
-        width: calc((100% - 60px) / 4); /* Четыре карточки в ряд */
+        width: calc((100% - 60px) / 4);
+        /* Четыре карточки в ряд */
     }
 
     .mp-doctors__link {
@@ -838,7 +890,8 @@ screen and (min-width: 1440px)and (min-resolution: 2dppx) {
     }
 
     .mp-doctors__item {
-        width: calc((100% - 80px) / 5); /* Пять карточек в ряд */
+        width: calc((100% - 80px) / 5);
+        /* Пять карточек в ряд */
     }
 
     .mp-doctors__image {
@@ -1650,52 +1703,26 @@ screen and (min-width: 1440px)and (min-resolution: 2dppx) {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: auto;
     padding: 120px 100px 40px 100px;
-    /* Паддинги сверху и снизу */
-    box-sizing: content-box;
-    /* Учитываем padding в ширине */
 }
 
 /* Фото стоматолога */
 .dentist-photo {
     flex: 1;
-    /* Фото занимает одну часть */
-    align-items: center;
-    justify-content: space-between;
-}
-
-.dentist-name {
-    color: #000;
-    /* Светло-серый цвет */
-    font-size: 60px;
-    margin-bottom: 50px;
-}
-
-.dentist-subscription {
-    /* Светло-серый цвет */
-    font-size: 30px;
-    margin-bottom: 50px;
 }
 
 .dentist-photo img {
     max-width: 100%;
-    /* Адаптация размера фото */
     height: auto;
     border-radius: 10px;
-    /* Закругленные углы */
     border: 5px solid #fff;
-    /* Белая рамка */
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-    /* Легкая тень */
 }
 
 /* Информация о стоматологе */
 .dentist-info {
     flex: 1.5;
-    /* Блок с текстом шире */
     text-align: center;
-    /* Центрирование текста */
     padding-left: 20px;
 }
 
@@ -1703,21 +1730,17 @@ screen and (min-width: 1440px)and (min-resolution: 2dppx) {
     font-size: 3rem;
     margin-bottom: 15px;
     text-transform: uppercase;
-    /* Верхний регистр */
     letter-spacing: 2px;
-    /* Межбуквенный интервал */
 }
 
 .dentist-info p {
     font-size: 2.2rem;
     margin-bottom: 20px;
     color: #858585;
-    /* Светло-серый текст */
 }
 
 .dentist-info .contacts {
     list-style: none;
-    /* Убираем маркеры списка */
     padding: 0;
     margin: auto;
     text-align: center;
@@ -1730,16 +1753,29 @@ screen and (min-width: 1440px)and (min-resolution: 2dppx) {
 }
 
 .dentist-info .contacts li strong {
-    text-align: center;
     color: #000;
-    /* Белый цвет для выделения заголовков */
 }
+
+/* Блоки услуг и рабочего времени */
+.services,
+.working-hours {
+    margin-top: 20px;
+    font-size: 1.7rem;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
 
 /* Медиазапрос для маленьких экранов */
 @media (max-width: 768px) {
     .dentistry {
         flex-direction: column;
-        padding: 60px 20px 20px 20px; /* Меньше отступов для мобильных */
+        padding: 60px 20px 20px 20px;
+        /* Меньше отступов для мобильных */
     }
 
     .dentist-photo {
@@ -1778,7 +1814,8 @@ screen and (min-width: 1440px)and (min-resolution: 2dppx) {
 /* Медиазапрос для очень маленьких экранов (например, телефоны с шириной менее 480px) */
 @media (max-width: 480px) {
     .dentistry {
-        padding: 40px 10px 10px 10px; /* Ещё меньше отступов */
+        padding: 40px 10px 10px 10px;
+        /* Ещё меньше отступов */
     }
 
     .dentist-name {
