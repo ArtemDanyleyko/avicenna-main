@@ -53,8 +53,8 @@ document.addEventListener('DOMContentLoaded', function () {
           packageDiv.className = 'package-item';
           packageDiv.innerHTML = `
             <strong>${pkg.name}</strong><br>
-            Содержание: ${pkg.content.join(', ')}<br>
-            Цена: ${pkg.price} грн
+            Перелік: ${pkg.content.join(', ')}<br>
+            Ціна: ${pkg.price} грн
           `;
           packagesContainer.appendChild(packageDiv);
         });
