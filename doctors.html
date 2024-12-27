@@ -36,107 +36,7 @@
 
 <body class="body">
     <div id="header" class="sub-header"></div>
-    <header class="header">
-        <div class="container">
-            <a href="https://www.avicennaclinic.pl" class="header__logo-link">
-                <img class="header__logo" src="./images/AvicennaLogo.jpg" alt="Фото клініки" width="100" height="50" />
-            </a>
-            <ul class="header__pagelist list">
-                <li class="header__pagelist-item">
-                    <a href="https://www.avicennaclinic.pl" class="header__pagelist-link link">Головна</a>
-                </li>
-                <li class="header__pagelist-item">
-                    <a href="services.html" class="header__pagelist-link link">Послуги</a>
-                </li>
-                <li class="header__pagelist-item">
-                    <a href="prices.html" class="header__pagelist-link link">Ціни</a>
-                </li>
-                <li class="header__pagelist-item">
-                    <a href="doctors.html" class="header__pagelist-link link current">Лікарі</a>
-                </li>
-                <li class="header__pagelist-item">
-                    <a href="gallery.html" class="header__pagelist-link link">Галерея</a>
-                </li>
-                <li class="header__pagelist-item">
-                    <a href="contacts.html" class="header__pagelist-link link">Контакти</a>
-                </li>
-                <li class="header__pagelist-item">
-                    <a href="dentistry.html" class="header__pagelist-link link">Стоматологія</a>
-                </li>
-            </ul>
-            <ul class="header__contactlist list">
-                <li class="header__contactlist-item">
-                    <a href="tel:+380505370059" class="header__contactlist-link link">
-                        <svg class="header__contactlist-icon" width="10" height="16">
-                            <use href="./images/icons.svg#icon-smartphone"></use>
-                        </svg>
-                        +380 (50) 537 00 59
-                    </a>
-                </li>
-                <li class="header__contactlist-item">
-                    <a href="https://maps.app.goo.gl/UGhffnsArwxpfyne9" class="header__contactlist-link link">
-                        <svg class="header__contactlist-icon" width="17" height="17">
-                            <use href="./images/icons.svg#icon-address"></use>
-                        </svg>
-                        Вул. Соборності 33
-                    </a>
-                </li>
-            </ul>
-            <button type="button" class="header-menu__button pointer" aria-expanded="false" aria-controls="menu" data-menu-button>
-                <svg class="header-menu__icon" width="40px" height="40px" aria-label="Переключатель мобильного меню">
-                    <use class="header-menu__burger" href="./images/icons.svg#icon-menu-burger"></use>
-                    <use class="header-menu__cross" href="./images/icons.svg#icon-menu-closer"></use>
-                </svg>
-            </button>
-        </div>
-        <div class="header-menu" id="menu" data-menu>
-            <div class="header-menu__container">
-                <a href="https://www.avicennaclinic.pl" class="header__mobilelogo">
-                    <img class="header__logo" src="./images/AvicennaLogo.jpg" alt="Фото клініки" width="100" height="50" />
-                </a>
-                <div class="header-menu__wrap">
-                    <ul class="header-menu__pagelist list">
-                        <li class="header-menu__pagelist-item">
-                            <a href="https://www.avicennaclinic.pl" class="header-menu__pagelist-link link">
-                                Головна
-                            </a>
-                        </li>
-                        <li class="header-menu__item">
-                            <a href="./services.html" class="header-menu__pagelist-link link">Послуги</a>
-                        </li>
-                        <li class="header-menu__item">
-                            <a href="./prices.html" class="header-menu__pagelist-link link">Ціни</a>
-                        </li>
-                        <li class="header-menu__item">
-                            <a href="./doctors.html" class="header-menu__pagelist-link link active">Лікарі</a>
-                        </li>
-                        <li class="header-menu__item">
-                            <a href="./gallery.html" class="header-menu__pagelist-link link">Галерея</a>
-                        </li>
-                        <li class="header-menu__item">
-                            <a href="./contacts.html" class="header-menu__pagelist-link link">Контакти</a>
-                        </li>
-                        <li class="header-menu__item">
-                            <a href="./dentistry.html" class="header-menu__pagelist-link link">Стоматологія</a>
-                        </li>
-                    </ul>
-                </div>
-                <ul class="header-menu__phonelist list">
-                    <li class="header-menu__phonelist-item">
-                        <a href="tel:+380505370059" class="header-menu__phonelist-link link">
-                            +380 (50) 537 00 59
-                        </a>
-                    </li>
-                    <li class="header-menu__phonelist-item">
-                        <a href="https://maps.app.goo.gl/UGhffnsArwxpfyne9" class="header-menu__address-link link">
-                            Вул. Соборності 33
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="header-menu__overlay"></div>
-    </header>
+    <header/>
     <!-- =========================DOCTORS=========================== -->
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-G101MR7XLL"></script>
@@ -218,85 +118,15 @@
 
     <!-- =========================FOOTER=========================== -->
 
-    <footer class="footer">
-        <div class="footer-partners-title">
-            Наші партнери
-        </div>
-        <!-- Горизонтальный контейнер для фотографий -->
-        <div class="footer-gallery">
-            <img src="./images/logo/la_roche_posay.jpg" alt="la roche posay" class="footer-gallery__item" />
-            <img src="./images/logo/vichy.png" alt="vichy" class="footer-gallery__item" />
-            <img src="./images/logo/cerave.png" alt="cerave" class="footer-gallery__item" />
-            <img src="./images/logo/arterium.png" alt="arterium" class="footer-gallery__item" />
-            <img src="./images/logo/bausch.png" alt="bausch" class="footer-gallery__item" />
-            <img src="./images/logo/delta-medical.png" alt="delta medical" class="footer-gallery__item" />
-            <img src="./images/logo/eucerin.png" alt="eucerin" class="footer-gallery__item" />
-            <img src="./images/logo/eurolek.png" alt="eurolek" class="footer-gallery__item" />
-            <img src="./images/logo/farmak.jpeg" alt="farmak" class="footer-gallery__item" />
-            <img src="./images/logo/gsk.jpg" alt="gsk" class="footer-gallery__item" />
-            <img src="./images/logo/kusum.jpg" alt="kusum" class="footer-gallery__item" />
-            <img src="./images/logo/propharma.png" alt="propharma" class="footer-gallery__item" />
-            <img src="./images/logo/viola.png" alt="viola" class="footer-gallery__item" />
-        </div>
-        <div class="container">
-            <div class="footer-contacts__wrap">
-                <p class="footer-title">Наші контакти</p>
-                <ul class="footer__contactlist list">
-                    <li class="footer__contactlist-item">
-                        <a href="tel:+380505370059" class="footer__contactlist-link link">
-                            <svg class="footer__contactlist-icon" width="10" height="16">
-                                <use href="./images/icons.svg#icon-smartphone"></use>
-                            </svg>
-                            +380 (50) 537 00 59
-                        </a>
-                    </li>
-                    <li class="footer__contactlist-item">
-                        <a href="https://maps.app.goo.gl/UGhffnsArwxpfyne9" class="footer__contactlist-link link">
-                            <svg class="footer__contactlist-icon" width="17" height="17">
-                                <use href="./images/icons.svg#icon-address"></use>
-                            </svg>
-                            Вул. Соборності 33
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-pages__wrap">
-                <p class="footer-title">Сторінки сайту</p>
-                <div class="footer-pages__lists">
-                    <ul class="footer-pages__list list">
-                        <li class="footer-pages__item">
-                            <a href="https://www.avicennaclinic.pl" class="footer-pages__link link">Головна</a>
-                        </li>
-                        <li class="footer-pages__item">
-                            <a href="./services.html" class="footer-pages__link link">Послуги</a>
-                        </li>
-                        <li class="footer-pages__item">
-                            <a href="./prices.html" class="footer-pages__link link">Ціни</a>
-                        </li>
-                    </ul>
-                    <ul class="footer-pages__list list">
-                        <li class="footer-pages__item">
-                            <a href="./doctors.html" class="footer-pages__link link">Лікарі</a>
-                        </li>
-                        <li class="footer-pages__item">
-                            <a href="./gallery.html" class="footer-pages__link link">Галерея</a>
-                        </li>
-                        <li class="footer-pages__item">
-                            <a href="./contacts.html" class="footer-pages__link link">Контакти</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <footer/>
 
     <!-- ==============================SCROLL-UP============================== -->
 
     <a href="#header" class="to-top">ВГОРУ</a>
 
     <!-- =========================SCRIPTS=========================== -->
-    <script src="./js/header-menu.js"></script>
-
-    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
-    <script src="./js/scroll-up.js"></script>
+    <script src="./js/load_header_footer.js" defer></script>
+    <script src="./js/header-menu.js" defer></script>
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js" defer></script>
+    <script src="./js/scroll-up.js" defer></script>
 </body></html>

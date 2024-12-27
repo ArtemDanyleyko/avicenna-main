@@ -1,33 +1,4 @@
-<!DOCTYPE html>
-<html lang="uk">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Стоматологія у Полтаві від Avicenna Clinic. Пломби, видалення зубів, лікування ясен та естетична реставрація. Понад 30 років досвіду." />
-    <meta name="keywords" content="стоматолог Полтава, стоматологія, пломби, видалення зубів, лікування ясен, Avicenna Clinic" />
-    <title>Стоматологія у Полтаві — Avicenna Clinic</title>
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png">
-
-    <!-- Apple Touch Icon -->
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-    <!-- Android Chrome Icon -->
-    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
-
-    <!-- Web Manifest -->
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/main.css?v=1.1" />
-</head>
-
-<body class="body">
-    <div id="header" class="sub-header"></div>
-    <header class="header">
+<header class="header">
         <div class="container">
             <a href="https://www.avicennaclinic.pl" class="header__logo-link">
                 <img class="header__logo" src="./images/AvicennaLogo.jpg" alt="Фото клініки" width="100" height="50" />
@@ -49,10 +20,10 @@
                     <a href="gallery.html" class="header__pagelist-link link">Галерея</a>
                 </li>
                 <li class="header__pagelist-item">
-                    <a href="contacts.html" class="header__pagelist-link link">Контакти</a>
+                    <a href="contacts.html" class="header__pagelist-link link current">Контакти</a>
                 </li>
                 <li class="header__pagelist-item">
-                    <a href="dentistry.html" class="header__pagelist-link link current">Стоматологія</a>
+                    <a href="dentistry.html" class="header__pagelist-link link">Стоматологія</a>
                 </li>
             </ul>
             <ul class="header__contactlist list">
@@ -103,10 +74,10 @@
                             <a href="./gallery.html" class="header-menu__pagelist-link link">Галерея</a>
                         </li>
                         <li class="header-menu__item">
-                            <a href="./contacts.html" class="header-menu__pagelist-link link">Контакти</a>
+                            <a href="./contacts.html" class="header-menu__pagelist-link link active">Контакти</a>
                         </li>
                         <li class="header-menu__item">
-                            <a href="./dentistry.html" class="header-menu__pagelist-link link active">Стоматологія</a>
+                            <a href="./dentistry.html" class="header-menu__pagelist-link link">Стоматологія</a>
                         </li>
                     </ul>
                 </div>
@@ -126,55 +97,3 @@
         </div>
         <div class="header-menu__overlay"></div>
     </header>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G101MR7XLL"></script>
-    <script>window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-G101MR7XLL');</script>
-
-    <!-- =========================dentistry=========================== -->
-
-    <main>
-        <section class="dentistry">
-            <div class="dentist-photo">
-                <img src="./images/dentestry/Dentist.jpg" width="500" height="600" alt="Досвідчений стоматолог Григоришин Іван Іванович, Полтава">
-            </div>
-            <div class="dentist-info">
-                <h1>Григоришин Іван Іванович</h1>
-                <p>
-                    Досвідчений стоматолог з понад 30-річним стажем. Спеціалізація: терапевтична стоматологія, естетична реставрація, лікування захворювань ясен.
-                </p>
-                <ul class="contacts">
-                    <li><strong>Телефон:</strong> +38 (050) 850-30-20</li>
-                    <li><strong>Адреса:</strong> Вул. Соборності 33</li>
-                </ul>
-                <div class="services">
-                    <h2>Послуги та ціни</h2>
-                    <p><strong>Пломби:</strong> від 650 грн</p>
-                    <p><strong>Видалення зуба:</strong> від 480 грн</p>
-                </div>
-                <div class="working-hours">
-                    <p><strong>Режим роботи:</strong> до 22:00</p>
-                    <p><strong>Можливий виклик надом.</strong></p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- =========================FOOTER=========================== -->
-
-    <footer/>
-
-    <!-- ==============================SCROLL-UP============================== -->
-
-    <a href="#header" class="to-top">ВГОРУ</a>
-
-    <!-- =========================SCRIPTS=========================== -->
-    <script src="./js/load_header_footer.js" defer></script>    
-    <script src="./js/header-menu.js" defer></script>
-    <script src="./js/contacts/form.js defer"></script>
-    <script src="https://kit.fontawesome.com/a54d2cbf95.js" defer></script>
-    <script src="./js/scroll-up.js" defer></script>
-</body></html>
