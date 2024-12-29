@@ -50,7 +50,9 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    margin-bottom: 15px;
+    align-content: center;
+    height: 80%;
+    margin-bottom: auto;
     align-items: center; /* Центрирование по вертикали */
 }
 
@@ -78,6 +80,8 @@
 
 .portfolio__description {
     font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: #dcdcdc;
     text-align: center;
 }
