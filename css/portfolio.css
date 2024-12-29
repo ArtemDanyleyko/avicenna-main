@@ -27,8 +27,9 @@
 
 .portfolio__items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, 1fr); /* Две карточки в строке */
     gap: 30px;
+    justify-content: center; /* Центрируем содержимое */
 }
 
 .portfolio__item {
@@ -38,13 +39,6 @@
     padding: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 20vw; /* Ограничение максимальной ширины на 5 частей экрана */
-}
-
-@media (min-width: 1024px) { /* Устанавливаем правило для больших экранов */
-    .portfolio__item {
-        max-width: 20vw; /* Ограничение на 1/5 ширины экрана */
-    }
 }
 
 .portfolio__item:hover {
@@ -90,7 +84,13 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .portfolio__images {
-        flex-direction: column;
+    .portfolio__items {
+        grid-template-columns: repeat(2, 1fr); /* Две карточки в строке */
+        gap: 15px;
+    }
+
+    .portfolio__item {
+        max-width: 100%; /* Убираем ограничение ширины */
+        margin: 0 auto; /* Центрируем карточки */
     }
 }

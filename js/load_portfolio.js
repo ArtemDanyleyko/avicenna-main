@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         descriptionHTML = `<p class="portfolio__description">${item.description}</p>`;
                     }
 
-                    portfolioItem.innerHTML = `
-                        <div class="portfolio__images">
+                    portfolioItem.innerHTML = 
+                        `<div class="portfolio__images">
                             <div class="portfolio__image-container">
                                 <h4 class="portfolio__image-label">До</h4>
                                 <a href="${item.beforeImage}" class="portfolio__link">
@@ -46,11 +46,15 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </a>
                             </div>
                         </div>
-                        ${descriptionHTML}
-                    `;
+                        ${descriptionHTML}`;
 
                     itemsContainer.appendChild(portfolioItem);
                 });
+
+                // Если карточек в категории одна, добавляем класс "single"
+                if (category.items.length === 1) {
+                    itemsContainer.classList.add('single');
+                }
 
                 categoryContainer.appendChild(itemsContainer);
                 portfolioList.appendChild(categoryContainer);
