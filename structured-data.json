@@ -14,5 +14,6 @@
   "url": "https://www.avicennaclinic.pl/",
   "image": "https://www.avicennaclinic.pl/images/AvicennaLogo.jpg",
   "description": "Багатопрофільна клініка пропонує послуги дерматології, УЗД та інші медичні процедури.",
-  "inLanguage": "uk"
+  "inLanguage": "uk",
+  "priceRange": "$"
 }
