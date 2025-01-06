@@ -56,7 +56,7 @@
     align-items: center; /* Центрирование по вертикали */
 }
 
-.portfolio__images.has-description .portfolio__image {
+.portfolio__images.has-description  {
     height: auto; /* Если есть описание, увеличиваем высоту */
 }
 

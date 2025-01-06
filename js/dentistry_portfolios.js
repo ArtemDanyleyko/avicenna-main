@@ -29,14 +29,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     let descriptionHTML = '';
                     if (item.description) {
                         descriptionHTML = `<p class="portfolio__description">${item.description.trim()}</p>`;
-                        console.log('Adding has-description class');
+                        console.log('Adding portfolio__description class');
                     }
 
                     // Создаем блок картинок
                     const portfolioImages = document.createElement('div');
                     portfolioImages.className = 'portfolio__images';
-                    if (descriptionHTML) {
+                    if (item.description) {
                         portfolioImages.classList.add('has-description');
+                        console.log('Adding has-description class');
                     }
 
                     portfolioImages.innerHTML = `
