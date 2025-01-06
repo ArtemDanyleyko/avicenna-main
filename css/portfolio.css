@@ -51,9 +51,13 @@
     justify-content: space-between;
     gap: 20px;
     align-content: center;
-    height: 70%;
+    height: 100%;
     margin-bottom: auto;
     align-items: center; /* Центрирование по вертикали */
+}
+
+.portfolio__images.has-description .portfolio__image {
+    height: auto; /* Если есть описание, увеличиваем высоту */
 }
 
 .portfolio__image-container {

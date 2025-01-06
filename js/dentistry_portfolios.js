@@ -25,37 +25,46 @@ document.addEventListener('DOMContentLoaded', () => {
                     const portfolioItem = document.createElement('div');
                     portfolioItem.className = 'portfolio__item';
 
-                    // Проверка на пустое описание
+                    // Создаем описание
                     let descriptionHTML = '';
-                    if (item.description && item.description.trim() !== '') {
-                        descriptionHTML = `<p class="portfolio__description">${item.description}</p>`;
+                    if (item.description) {
+                        descriptionHTML = `<p class="portfolio__description">${item.description.trim()}</p>`;
+                        console.log('Adding has-description class');
                     }
 
-                    portfolioItem.innerHTML = 
-                        `<div class="portfolio__images">
-                            <div class="portfolio__image-container">
-                                <h4 class="portfolio__image-label">До</h4>
-                                <a href="${item.beforeImage}" class="portfolio__link">
-                                    <img src="${item.beforeImage}" alt="${item.alt1}" class="portfolio__image" />
-                                </a>
-                            </div>
-                            <div class="portfolio__image-container">
-                                <h4 class="portfolio__image-label">Після</h4>
-                                <a href="${item.afterImage}" class="portfolio__link">
-                                    <img src="${item.afterImage}" alt="${item.alt2}" class="portfolio__image" />
-                                </a>
-                            </div>
+                    // Создаем блок картинок
+                    const portfolioImages = document.createElement('div');
+                    portfolioImages.className = 'portfolio__images';
+                    if (descriptionHTML) {
+                        portfolioImages.classList.add('has-description');
+                    }
+
+                    portfolioImages.innerHTML = `
+                        <div class="portfolio__image-container">
+                            <h4 class="portfolio__image-label">До</h4>
+                            <a href="${item.beforeImage}" class="portfolio__link">
+                                <img src="${item.beforeImage}" alt="${item.alt1}" class="portfolio__image" />
+                            </a>
                         </div>
-                        ${descriptionHTML}`;
+                        <div class="portfolio__image-container">
+                            <h4 class="portfolio__image-label">Після</h4>
+                            <a href="${item.afterImage}" class="portfolio__link">
+                                <img src="${item.afterImage}" alt="${item.alt2}" class="portfolio__image" />
+                            </a>
+                        </div>
+                    `;
+
+                    portfolioItem.appendChild(portfolioImages);
+
+                    // Добавляем описание
+                    if (descriptionHTML) {
+                        const descriptionElement = document.createElement('div');
+                        descriptionElement.innerHTML = descriptionHTML;
+                        portfolioItem.appendChild(descriptionElement);
+                    }
 
                     itemsContainer.appendChild(portfolioItem);
                 });
-
-                // Если карточек в категории одна, добавляем класс "single"
-                if (category.items.length === 1) {
-                    itemsContainer.classList.add('single');
-                }
-
                 categoryContainer.appendChild(itemsContainer);
                 portfolioList.appendChild(categoryContainer);
             });

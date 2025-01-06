@@ -1685,12 +1685,16 @@ screen and (min-width: 1440px)and (min-resolution: 2dppx) {
     margin-bottom: -5px
 }
 
+.dentistry_section{
+    padding: 120px 100px 40px 100px;
+}
+
 /* Секция стоматолога */
 .dentistry {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 120px 100px 40px 100px;
+    
 }
 
 /* Фото стоматолога */
