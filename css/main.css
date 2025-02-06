@@ -1238,6 +1238,56 @@ screen and (min-width: 1440px)and (min-resolution: 2dppx) {
     }
 }
 
+/* Сброс стандартных стилей для input */
+#search-input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+/* Оформление контейнера для поля поиска */
+.search-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 5px;
+  background: #888;
+  border: 1px solid #000; /* Одиночная чёрная рамка */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Оформление самого поля поиска */
+#search-input {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 20px;
+  color: #000;
+  background: #f9f9f9;
+  border: 1px solid #000;  /* Одиночная чёрная рамка */
+  border-radius: 8px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Эффект при фокусе на поле поиска */
+#search-input:focus {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для плейсхолдера */
+#search-input::placeholder {
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  .search-container {
+    margin: 30px 20px;
+  }
+}
+
 .prices__title {
     font-size: 32px;
     color: var(--main-title-color);

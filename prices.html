@@ -36,19 +36,23 @@
 
     <!-- =========================PRICES=========================== -->
 
-    <main>
-        <section class="prices">
-            <h2 class="prices__title">НАШІ ЦІНИ</h2>
-            <div class="container">
-                <div id="price-list"></div>
-            </div>
-            <h2 class="prices__title">ЛАБОРАТОРIЯ</h2>
-            <div class="container">
-                <div id="laboratory-list"></div>
-                <button id="load-more" style="display: none;" class="load-more-button">Завантажити ще</button>
-            </div>
-        </section>
-    </main>
+<main> 
+    <section class="prices">
+          <div class="search-container">
+    <input type="text" id="search-input" placeholder="Пошук..." />
+  </div>
+        <h2 class="prices__title">НАШІ ЦІНИ</h2>
+        <div class="container">
+            <div id="price-list"></div>
+        </div>
+        <!-- Заголовок для раздела лаборатории -->
+        <h2 class="prices__title">ЛАБОРАТОРIЯ</h2>
+        <div class="container">
+            <div id="laboratory-list"></div>
+            <button id="load-more" style="display: none;" class="load-more-button">Завантажити ще</button>
+        </div>
+    </section>
+</main>
 
     <!-- =========================FOOTER=========================== -->
 
@@ -63,7 +67,6 @@
     <!-- =========================SCRIPTS=========================== -->
     <script src="./js/load_header_footer.js" defer></script>
     <script src="./js/load_prices.js" defer></script>
-    <script src="./js/load_lab_prices.js" defer></script>
     <script src="https://kit.fontawesome.com/a54d2cbf95.js" defer></script>
     <script src="./js/scroll-up.js" defer></script>
 
