@@ -1,0 +1,134 @@
+.services {
+    padding-top: 100px;
+    padding-bottom: 80px
+}
+
+@media screen and (min-width: 1024px) {
+    .services {
+        padding-top: 140px
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .services .container {
+        width: 768px
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .services .container {
+        width: 1024px
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .services .container {
+        width: 1440px
+    }
+}
+
+.services__title {
+    font-size: 32px;
+    color: var(--main-title-color);
+    text-align: center;
+    margin-bottom: 40px
+}
+
+.services__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px
+}
+
+.services__item {
+    max-width: 630px;
+    height: auto;
+    text-align: center;
+    background-color: var(--page-colour-black);
+    box-shadow: var(--card-box-shadow);
+    border: 1px solid #000;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 15px
+}
+
+@media screen and (min-width: 768px) {
+    .services__item {
+        width: calc((100% - 30px)/2)
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .services__item {
+        width: calc((100% - 90px)/4)
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .services__item {
+        width: calc((100% - 90px)/4)
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .services__item:last-child {
+        display: block
+    }
+}
+
+.services__image {
+    width: 100%
+}
+
+.services__subtitle {
+    font-size: 20px;
+    color: var(--page-colour-white);
+    margin-top: 15px;
+    margin-bottom: 15px
+}
+
+@media screen and (min-width: 1440px) {
+    .services__subtitle {
+        font-size: 22px;
+        margin-top: 20px;
+        margin-bottom: 20px
+    }
+}
+
+.services__text {
+    font-size: 18px;
+    text-align: center;
+    margin: 0px 15px;
+    color: var(--page-colour-white);
+    line-height: 1.5
+}
+
+.services__link {
+    font-size: 20px;
+    color: var(--text-colour-white);
+    font-weight: 500;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+@media screen and (min-width: 768px) {
+    .services__link {
+        font-size: 22px;
+        font-weight: 600
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .services__link {
+        font-size: 24px;
+        font-weight: 700
+    }
+}
+
+.services__link:hover,
+.services__link:focus {
+    color: var(--main-hover-focus-color)
+}

@@ -28,31 +28,36 @@
     <header></header>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-G101MR7XLL"></script>
-    <script>window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
-        gtag('config', 'G-G101MR7XLL');</script>
+        gtag('config', 'G-G101MR7XLL');
+    </script>
 
     <!-- =========================PRICES=========================== -->
 
-<main> 
-    <section class="prices">
-          <div class="search-container">
-    <input type="text" id="search-input" placeholder="Пошук..." />
-  </div>
-        <h2 class="prices__title">НАШІ ЦІНИ</h2>
-        <div class="container">
-            <div id="price-list"></div>
-        </div>
-        <!-- Заголовок для раздела лаборатории -->
-        <h2 class="prices__title">ЛАБОРАТОРIЯ</h2>
-        <div class="container">
-            <div id="laboratory-list"></div>
-            <button id="load-more" style="display: none;" class="load-more-button">Завантажити ще</button>
-        </div>
-    </section>
-</main>
+    <main>
+        <section class="prices">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Пошук..." />
+            </div>
+            <h2 class="prices__title">НАШІ ЦІНИ</h2>
+            <div class="container">
+                <div id="price-list"></div>
+            </div>
+            <!-- Заголовок для раздела лаборатории -->
+            <h2 class="prices__title">ЛАБОРАТОРIЯ</h2>
+            <div class="container">
+                <div id="laboratory-list"></div>
+                <button id="load-more" style="display: none;" class="load-more-button">Завантажити ще</button>
+            </div>
+        </section>
+    </main>
 
     <!-- =========================FOOTER=========================== -->
 

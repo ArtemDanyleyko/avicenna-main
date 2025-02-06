@@ -1,0 +1,143 @@
+.dentistry_section{
+    padding: 120px 100px 40px 100px;
+}
+
+/* Секция стоматолога */
+.dentistry {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* Фото стоматолога */
+.dentist-photo {
+    flex: 1;
+}
+
+.dentist-photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid #fff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Информация о стоматологе */
+.dentist-info {
+    flex: 1.5;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.dentist-info h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.dentist-info p {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #858585;
+}
+
+.dentist-info .contacts {
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.dentist-info .contacts li {
+    font-size: 1.7rem;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.dentist-info .contacts li strong {
+    color: #000;
+}
+
+/* Блоки услуг и рабочего времени */
+.services,
+.working-hours {
+    margin-top: 20px;
+    font-size: 1.7rem;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+
+/* Медиазапрос для маленьких экранов */
+@media (max-width: 768px) {
+    .dentistry {
+        flex-direction: column;
+        padding: 60px 20px 20px 20px;
+        /* Меньше отступов для мобильных */
+    }
+
+    .dentist-photo {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .dentist-info {
+        flex: 1;
+        padding-left: 0;
+    }
+
+    .dentist-name {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+
+    .dentist-subscription {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .dentist-info h1 {
+        font-size: 2rem;
+    }
+
+    .dentist-info p {
+        font-size: 1.6rem;
+    }
+
+    .dentist-info .contacts li {
+        font-size: 1.4rem;
+    }
+}
+
+/* Медиазапрос для очень маленьких экранов (например, телефоны с шириной менее 480px) */
+@media (max-width: 480px) {
+    .dentistry {
+        padding: 40px 10px 10px 10px;
+        /* Ещё меньше отступов */
+    }
+
+    .dentist-name {
+        font-size: 2rem;
+    }
+
+    .dentist-subscription {
+        font-size: 1.2rem;
+    }
+
+    .dentist-info h1 {
+        font-size: 1.6rem;
+    }
+
+    .dentist-info p {
+        font-size: 1.4rem;
+    }
+
+    .dentist-info .contacts li {
+        font-size: 1.2rem;
+    }
+}

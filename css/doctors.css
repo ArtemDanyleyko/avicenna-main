@@ -1,0 +1,129 @@
+.doctors {
+    padding-top: 100px;
+    padding-bottom: 80px
+}
+
+@media screen and (min-width: 1024px) {
+    .doctors {
+        padding-top: 140px
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .doctors .container {
+        width: 768px
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .doctors .container {
+        width: 1024px
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .doctors .container {
+        width: 1440px
+    }
+}
+
+.doctors__title {
+    font-size: 32px;
+    text-align: center;
+    color: var(--main-title-color);
+    margin-bottom: 40px
+}
+
+.doctors__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px
+}
+
+@media screen and (min-width: 768px) {
+    .doctors__list {
+        justify-content: left
+    }
+}
+
+.doctors__item {
+    display: block;
+    text-align: center;
+    flex-direction: column;
+    max-width: 630px;
+    height: auto;
+    display: grid;
+    background-color: var(--page-colour-white);
+    box-shadow: var(--card-box-shadow);
+    border: var(--page-colour-black) solid 3px;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    padding-bottom: 15px
+}
+
+@media screen and (min-width: 768px) {
+    .doctors__item {
+        width: calc((100% - 60px)/3)
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .doctors__item {
+        width: calc((100% - 90px)/4)
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .doctors__item {
+        width: calc((100% - 120px)/5)
+    }
+}
+
+.doctors__image {
+    width: 100%
+}
+
+.doctors__subtitle {
+    font-size: 20px;
+    color: var(--main-title-color);
+    margin-top: 15px;
+    margin-bottom: 10px
+}
+
+@media screen and (min-width: 768px) {
+    .doctors__subtitle {
+        margin-top: 20px;
+        margin-bottom: 10px
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .doctors__subtitle {
+        margin-bottom: 20px
+    }
+}
+
+.doctors__text {
+    color: var(--main-title-color)
+}
+
+.doctors__link {
+    display: inline-block;
+    text-align: center;
+    background-color: var(--text-colour-black);
+    color: #fff;
+    border: none;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.doctors__link:hover,
+.doctors__link:focus {
+    background-color: var(--main-hover-focus-color)
+}
