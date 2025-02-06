@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     const portfolioItem = document.createElement('div');
                     portfolioItem.className = 'portfolio__item';
 
-                    // Проверка на пустое описание
                     let descriptionHTML = '';
                     if (item.description && item.description.trim() !== '') {
                         descriptionHTML = `<p class="portfolio__description">${item.description}</p>`;
@@ -35,14 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
                         `<div class="portfolio__images">
                             <div class="portfolio__image-container">
                                 <h4 class="portfolio__image-label">До</h4>
-                                <a href="${item.beforeImage}" class="portfolio__link">
-                                    <img src="${item.beforeImage}" alt="${item.alt1}" class="portfolio__image" />
+                                <a href="${item.beforeImage}" class="portfolio__link" data-title="${item.alt1}">
+                                    <img src="${item.beforeImage}" alt="" class="portfolio__image" />
                                 </a>
                             </div>
                             <div class="portfolio__image-container">
                                 <h4 class="portfolio__image-label">Після</h4>
-                                <a href="${item.afterImage}" class="portfolio__link">
-                                    <img src="${item.afterImage}" alt="${item.alt2}" class="portfolio__image" />
+                                <a href="${item.afterImage}" class="portfolio__link" data-title="${item.alt2}">
+                                    <img src="${item.afterImage}" alt="" class="portfolio__image" />
                                 </a>
                             </div>
                         </div>
@@ -51,7 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     itemsContainer.appendChild(portfolioItem);
                 });
 
-                // Если карточек в категории одна, добавляем класс "single"
                 if (category.items.length === 1) {
                     itemsContainer.classList.add('single');
                 }
@@ -63,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Инициализация SimpleLightbox
             let lightbox = new SimpleLightbox('.portfolio__link', {
                 captions: true,
-                captionsData: 'alt',
+                captionsData: 'data-title', // Берем подпись из data-title
                 captionDelay: 250,
             });
 
